@@ -38,3 +38,13 @@ products = [
 #print(products[0]["name"])
 
 print(len(products))
+
+#print(products[0])
+
+def product_name(any_p):
+    return any_p["name"]
+
+products = sorted(products, key=product_name)
+
+for p in products:
+    print("The name is " + p["name"] + " and the price is " + str(p["price"]))
